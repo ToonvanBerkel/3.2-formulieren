@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="firstname">Voornaam</label>
+            <input type="name" name="firstname" id="firstname" pattern="[a-z]{1,15}"
+                title="Voornaam kan geen cijfers hebben.">
+        </div>
+        <div>
+            <label for="lastname">Achternaam</label>
+            <input type="name" name="lastname" id="lastname" pattern="[a-z]{1,15}"
+                title="Achternaam kan geen cijfers hebben.">
+        </div>
+        <div>
+            Gender
+            <div>
+                <label for="male">man</label>
+                <input type="radio" name="gender" id="male" checked>
+            </div>
+            <div>
+                <label for="female">vrouw</label>
+                <input type="radio" name="gender" id="female">
+            </div>
+            <div>
+                <label for="other">Anders</label>
+                <input type="radio" name="gender" id="other">
+            </div>
+        </div>
+        <div>
+            <label for="streetwithhousenumber">Straat met huisnummer</label>
+            <input type="text" name="streetwithhousenumber" id="streetwithhousenumber">
+        </div>
+        <div>
+            <label for="postalcode">Postcode</label>
+            <input type="text" name="postalcode" id="postalcode">
+        </div>
+        <div>
+            <label for="city">Stad</label>
+            <input type="text" name="city" id="city">
+        </div>
+        <div>
+            <label for="country">Land</label>
+            <input type="text" name="country" id="country">
+        </div>
+        <div>
+            <label for="BSNnumber">BSN-nummer</label>
+            <input type="text" name="BSNnumber" id="BSNnumber" pattern="[0-9]+"
+                title="Er zijn geen letter in je BSN-nummer." maxlength="9">
+        </div>
+        <div>
+            <label for="holidaycountry">Vakantieland</label>
+            <select>
+                <option value="Polen">Polen</option>
+                <option value="Hawai">Hawai</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Bali">Bali</option>
+                <option value="Zuid-Korea">Zuid-Korea</option>
+                <option value="Noord-Korea">Noord-Korea</option>
+                <option value="Zwitserland">Zwitserland</option>
+                <option value="Duitsland">Duitsland</option>
+            </select>
+        </div>
+        <div>
+            <label for="date of departure">Datum van vertrek</label>
+            <input type="date" name="date of departure" id="date of departure" min="2023-09-14">
+        </div>
+        <div>
+            <label for="dateofreturn">Datum van terugkomst</label>
+            <input type="date" name="dateofreturn" id="dateofreturn">
+        </div>
+        <div>
+            <label for="numberoftravelingcompanions">Aantal reisgenoten</label>
+            <input type="number" name="numberoftravelingcompanions" id="numberoftravelingcompanions" max="4" min="0">
+        </div>
+        <button>Boek nu</button>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Wachtwoord</label>
+            <input type="password" name="password" id="password">
+        </div>
+    </form>
+</body>
+
+</html>
